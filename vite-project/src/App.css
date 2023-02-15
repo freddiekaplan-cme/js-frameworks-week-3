@@ -1,0 +1,23 @@
+html {
+	font-size: 14px; 
+	height: 100vh;
+  }
+  
+body {	
+	height: 100%;
+	margin: 0;
+ }
+  
+ * {
+	box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+}
+
+.billboard-background {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
