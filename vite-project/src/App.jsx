@@ -1,14 +1,22 @@
 import { useEffect, useState } from 'react'
 import billboard from './assets/billboard.jpg'
+import '../src/typography.css'
 import './App.css'
 
-function App() {
-  
+function App() { 
 
   return (
     <div className="App">
      <img className='billboard-background' src={billboard} alt='A billboard in a big city.' />
-     
+     <div className='container'>
+      <div className='main-text'>
+        Billboard<br />Mockup
+      </div>
+      <div className='second-text'>
+        Put Your<br />Design Here
+      </div>
+     </div>
+    
     </div>
   )
 }

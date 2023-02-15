@@ -1,3 +1,12 @@
+:root {
+  --black: #212121;
+  --peach: #B1544C;
+  --pink: #D1ACB4;
+  --big-font: 19px;
+  --small-font: 10px;
+  --image-size-medium: 1200px;
+}
+
 html {
 	font-size: 14px; 
 	height: 100vh;
@@ -17,7 +26,32 @@ body {
 }
 
 .billboard-background {
+  /* position: absolute;
+  right: 0; */
+  width: var(--image-size-medium);
+  z-index: 10;
+}
+
+.container {
+  border: 3px solid red;
+  height: 288px;
+  left: 451px;
   position: absolute;
-  right: 0;
-  width: 100%;
+  top: 422px;
+  width: 624px;
+  z-index: 20;
+}
+
+.main-text {
+  color: var(--black);
+  font-family: 'fractful semibold';
+  font-size: var(--big-font);
+  z-index: 20;
+}
+
+.second-text {
+  color: var(--peach);
+  font-family: 'fractful';
+  font-size: var(--small-font);
+  font-weight: 400;
 }
