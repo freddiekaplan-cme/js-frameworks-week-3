@@ -2,9 +2,12 @@
   --black: #212121;
   --peach: #B1544C;
   --pink: #D1ACB4;
-  --big-font: 19px;
-  --small-font: 10px;
+  --big-font: 40px;
+  --small-font: 22px;
   --image-size-medium: 1200px;
+  --padding-medium: 24px;
+  --triangle-container-height-medium: 237px;
+  --triangle-container-width-medium: 367px;
 }
 
 html {
@@ -33,11 +36,12 @@ body {
 }
 
 .container {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 288px;
   left: 451px;
   position: absolute;
   top: 422px;
+  padding: var(--padding-medium);
   width: 624px;
   z-index: 20;
 }
@@ -46,6 +50,7 @@ body {
   color: var(--black);
   font-family: 'fractful semibold';
   font-size: var(--big-font);
+  line-height: 1;
   z-index: 20;
 }
 
@@ -54,4 +59,43 @@ body {
   font-family: 'fractful';
   font-size: var(--small-font);
   font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  bottom: var(--padding-medium);
+}
+
+.triangle-container {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  left: 230px;
+  position: absolute;
+  top: var(--padding-medium);
+}
+
+/* .triangle-container-1 {
+  height: 237px;
+  left: 230px;
+  position: absolute;
+  top: var(--padding-medium);
+  width: 367px;
+} */
+
+.triangle {
+  border-bottom: calc(var(--triangle-container-height-medium)/3) solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.triangle-peach {
+  border-right: calc(var(--triangle-container-width-medium)/5) solid var(--peach);
+}
+
+.triangle-pink {
+  border-right: calc(var(--triangle-container-width-medium)/5) solid var(--pink);
+}
+
+.triangle-transparent {
+  border-right: calc(var(--triangle-container-width-medium)/5) solid transparent;
 }
