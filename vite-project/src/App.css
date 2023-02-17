@@ -69,18 +69,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  left: 230px;
+  left: 240px;
   position: absolute;
+  transform: skew(3.5deg, 0deg);
   top: var(--padding-medium);
 }
-
-/* .triangle-container-1 {
-  height: 237px;
-  left: 230px;
-  position: absolute;
-  top: var(--padding-medium);
-  width: 367px;
-} */
 
 .triangle {
   border-bottom: calc(var(--triangle-container-height-medium)/3) solid transparent;
