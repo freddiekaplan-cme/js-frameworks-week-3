@@ -4,10 +4,10 @@
   --pink: #D1ACB4;
   --big-font: 40px;
   --small-font: 22px;
-  --image-size-medium: 1200px;
-  --padding-medium: 24px;
+  --image-width: 1200px;
+  --padding: 24px;
   --triangle-container-height-medium: 237px;
-  --triangle-container-width-medium: 367px;
+  --triangle-container-width-medium: 377px;
 }
 
 html {
@@ -15,9 +15,12 @@ html {
 	height: 100vh;
   }
   
-body {	
+body {
+  display: flex;
 	height: 100%;
 	margin: 0;
+  justify-content: end;
+  align-items: center;
  }
   
  * {
@@ -25,13 +28,13 @@ body {
 }
 
 .App {
+  display: flex;
   position: relative;
 }
 
 .billboard-background {
-  /* position: absolute;
-  right: 0; */
-  width: var(--image-size-medium);
+  position: relative;
+  width: var(--image-width);
   z-index: 10;
 }
 
@@ -41,7 +44,7 @@ body {
   left: 451px;
   position: absolute;
   top: 422px;
-  padding: var(--padding-medium);
+  padding: var(--padding);
   width: 624px;
   z-index: 20;
 }
@@ -56,12 +59,13 @@ body {
 
 .second-text {
   color: var(--peach);
+  cursor: pointer;
   font-family: 'fractful';
   font-size: var(--small-font);
   font-weight: 400;
   line-height: 1;
   position: absolute;
-  bottom: var(--padding-medium);
+  bottom: 32px;
 }
 
 .triangle-container {
@@ -69,10 +73,10 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  left: 240px;
+  left: 230px;
   position: absolute;
   transform: skew(3.5deg, 0deg);
-  top: var(--padding-medium);
+  top: var(--padding);
 }
 
 .triangle {
@@ -91,4 +95,32 @@ body {
 
 .triangle-transparent {
   border-right: calc(var(--triangle-container-width-medium)/5) solid transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --image-width: 1800px;
+    --padding: 40px;
+    --triangle-container-height-medium: 343px;
+    --triangle-container-width-medium: 556px;
+    --big-font: 56px;
+    --small-font: 30px;
+  }
+
+  .container {
+    height: 431px;
+    left: 677px;
+    top: 632px;
+  }
+
+  .triangle-container {
+   /* border: 3px solid red;
+     left: 344px;
+    right: -285px;
+    top: 45px; */
+
+    left: 344px;
+    right: -280px;
+    top: 40px;
+  }
 }
