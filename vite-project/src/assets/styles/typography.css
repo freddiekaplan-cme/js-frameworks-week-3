@@ -1,0 +1,12 @@
+@font-face {
+    font-family: fractful;
+    font-weight: 400;
+    src: url('../fonts/fractul-regular.woff') format('woff'),
+    url('../fonts/fractul-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'fractful semibold';
+    src: url('../fonts/fractul-semibold.woff') format('woff'),
+    url('../fonts/fractul-semibold.woff2') format('woff2');
+}
