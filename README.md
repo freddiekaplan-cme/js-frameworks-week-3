@@ -2,11 +2,6 @@
 
 Screenshots in src / assets.
 
-original-mockup.jpg
+The basis of the design: *original-mockup.jpg*
 
-The basis of the design.
-
-
-site-screenshot.png
-
-A screenshot of the finished site.
+A screenshot of the finished site: *site-screenshot.png*
